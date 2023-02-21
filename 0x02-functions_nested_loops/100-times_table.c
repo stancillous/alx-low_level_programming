@@ -17,32 +17,32 @@ void print_times_table(int n)
 			res = i * j;
 			if (res > 99)
 			{
-				putchar(res / 100 + '0');
-				putchar((res / 10 % 10) + '0');
-				putchar(res % 10 + '0');
+				_putchar(res / 100 + '0');
+				_putchar((res / 10 % 10) + '0');
+				_putchar(res % 10 + '0');
 			}
 			else if (res > 9)
 			{
-				putchar(' ');
-				putchar(res / 10 + '0');
-				putchar(res % 10 + '0');
+				_putchar(' ');
+				_putchar(res / 10 + '0');
+				_putchar(res % 10 + '0');
 			}
 			else if (j != 0)
 			{
-				putchar(' ');
-				putchar(' ');
-				putchar(res + '0');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(res + '0');
 			}
 			else
-				putchar(res + '0');
+				_putchar(res + '0');
 
 			if (j != n)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 }
