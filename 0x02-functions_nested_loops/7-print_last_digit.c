@@ -10,8 +10,14 @@ int print_last_digit(int n)
 
 	if (remainder < 0)
 	{
-		return (-1 * remainder);
-	}
-	return (remainder);
-}
+		int d = -1 * remainder;
 
+		_putchar(d + '0');
+		return (d);
+	}
+	else
+	{
+		_putchar(remainder + '0');
+		return (remainder);
+	}
+}
