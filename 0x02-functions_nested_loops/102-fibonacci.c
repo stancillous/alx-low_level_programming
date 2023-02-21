@@ -11,7 +11,7 @@ int main(void)
 	int sum;
 
 	printf("%d, ", a);
-	prinf("%d, ", b);
+	printf("%d, ", b);
 
 	while (counter < 98)
 	{
