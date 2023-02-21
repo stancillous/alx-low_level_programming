@@ -5,22 +5,29 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int counter = 0;
-	int sum;
+	long int a = 1;
+	long int b = 2;
+	int counter = 2;
+	long int sum;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
-	while (counter < 98)
+	while (counter <= 50)
 	{
+		if (counter == 50)
+		{
+			printf("%ld", sum);
+		}
+		else
+			printf("%ld, ", sum);
+
+
 		sum = a + b;
 		a = b;
 		b = sum;
-
-		printf("%d, ", sum);
 		counter++;
 	}
+	printf("\n");
 	return (0);
 }
