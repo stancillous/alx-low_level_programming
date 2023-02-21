@@ -8,24 +8,23 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 	int counter = 2;
-	long int sum;
+	long int holder;
 
 	printf("%ld, ", a);
-	printf("%ld, ", b);
 
 	while (counter <= 50)
 	{
 		if (counter == 50)
 		{
-			printf("%ld", sum);
+			printf("%ld", b);
 		}
 		else
-			printf("%ld, ", sum);
+			printf("%ld, ", b);
 
 
-		sum = a + b;
-		a = b;
-		b = sum;
+		holder =  b;
+		b += a;
+		a = holder;
 		counter++;
 	}
 	printf("\n");
