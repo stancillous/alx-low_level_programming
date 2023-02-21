@@ -7,7 +7,7 @@ int main(void)
 {
 	long int a = 1, b = 2;
 	long int next_num = 0;
-	long int even_sum = 0;
+	long int even_sum = 2;
 
 	while (next_num < 4000000)
 	{
