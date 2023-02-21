@@ -13,10 +13,10 @@ int main(void)
 	printf("%lu, %lu, ", a, b);
 	for (counter = 2; counter < 98; counter++)
 	{
-		if (a + b > 100000000 || fr2 > 0 || fr1 > 0)
+		if (a + b > 10000000000 || fr2 > 0 || fr1 > 0)
 		{
-			res1 = (a + b) / 100000000;
-			res2 = (a + b) % 100000000;
+			res1 = (a + b) / 10000000000;
+			res2 = (a + b) % 10000000000;
 			res3 = fr1 + fr2 + res1;
 			fr1 = fr2, fr2 = res3;
 			a = b, b = res2;
