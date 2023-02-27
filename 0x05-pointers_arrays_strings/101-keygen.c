@@ -9,15 +9,18 @@
 
 int main(void)
 {
-	int myrand, count, total;
+	int tRand;
+	int total = 2772;
+	int i = 0;
 
 	srand(time(NULL));
 
-	for (count = 0, total = 2772; total > 122; count++)
+	while (total > 122)
 	{
-		myrand = (rand() % 125) + 1;
-		printf("%c", myrand);
-		total -= myrand;
+		tRand = (rand() % 125) + 1;
+		printf("%c", tRand);
+		i++;
+		total -= tRand;
 	}
 	printf("%c", total);
 
