@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int mul = 1;
-	int bal = 0;
+	unsigned int bal = 0;
 
 	while (!(s[i] <= 57 && s[i] >= 48) && s[i] != '\0')
 	{
