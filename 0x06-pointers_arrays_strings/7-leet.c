@@ -8,12 +8,9 @@
 
 char *leet(char *str)
 {
-	int i, j;
+	int j;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-
-	for (j = 0; j < i; j++)
+	for (j = 0; str[j] != '\0'; j++)
 	{
 		while (str[j] == 'a' || str[j] == 'A')
 			str[j] = '4';
