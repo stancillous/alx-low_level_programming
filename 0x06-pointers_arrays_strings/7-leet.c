@@ -15,15 +15,15 @@ char *leet(char *str)
 
 	for (j = 0; j < i; j++)
 	{
-		if (str[j] == 'a' || str[j] == 'A')
+		while (str[j] == 'a' || str[j] == 'A')
 			str[j] = '4';
-		else if (str[j] == 'e' || str[j] == 'E')
+		while (str[j] == 'e' || str[j] == 'E')
 			str[j] = '3';
-		else if (str[j] == 'o' || str[j] == 'O')
+		while (str[j] == 'o' || str[j] == 'O')
 			str[j] = '0';
-		else if (str[j] == 't' || str[j] == 'T')
+		while (str[j] == 't' || str[j] == 'T')
 			str[j] = '7';
-		else if (str[j] == 'l' || str[j] == 'L')
+		while (str[j] == 'l' || str[j] == 'L')
 			str[j] = '1';
 		else
 			str[j] = str[j];
