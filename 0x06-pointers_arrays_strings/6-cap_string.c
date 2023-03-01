@@ -8,12 +8,9 @@
 
 char *cap_string(char *str)
 {
-	int i, j;
+	int j;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-
-	for (j = 0; j < i; j++)
+	for (j = 0; str[j] != '\0'; j++)
 	{
 		/*check for symbols*/
 		if ((str[j - 1] == '.' || str[j - 1] == ' ' || str[j - 1] == ',' ||
@@ -26,6 +23,10 @@ char *cap_string(char *str)
 		{
 			str[j] -= 32;
 		}
+		else if (str[0] >= 97 && str[0] <= 122)
+			str[0] -= 32;
+		else
+			str[j] = str[j];
 	}
 	return (str);
 }
