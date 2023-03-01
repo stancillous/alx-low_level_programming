@@ -22,8 +22,6 @@ char *leet(char *str)
 			str[j] = '7';
 		while (str[j] == 'l' || str[j] == 'L')
 			str[j] = '1';
-		else
-			str[j] = str[j];
 	}
 	return (str);
 }
