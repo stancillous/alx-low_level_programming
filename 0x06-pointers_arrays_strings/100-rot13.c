@@ -15,7 +15,7 @@ char *rot13(char *str)
 
 	while (str[i] != '\0')
 	{
-		for (j  0; j < 52; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (str[i] == s1[j])
 			{
