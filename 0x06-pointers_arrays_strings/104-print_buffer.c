@@ -31,7 +31,7 @@ void print_buffer(char *b, int size)
 				if (k >= size)
 					break;
 				if (b[k] < 32 || b[k] > 126)
-					printf("%c", ".");
+					printf(".");
 				else
 					printf("%c", b[k]);
 			}
