@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	int number, hold, tens = 1;
+	unsigned int number, hold, tens = 1;
 
 	/*check if number is +ve or -ve*/
 	if (n < 0)
