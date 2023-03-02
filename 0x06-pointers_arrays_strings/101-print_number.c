@@ -23,12 +23,12 @@ void print_number(int n)
 
 	while (hold > 9)
 	{
-		tens *= 10; /*count the number of tens every time hold is divisible by 10*/
 		hold /= 10;
+		tens *= 10; /*count the number of tens every time hold is divisible by 10*/
 	}
 	for (; tens >= 1; tens /= 10)
 	{
 		/*print the left most number for each loop*/
-		_putchar((number / tens) % 10 + '0');
+		_putchar(((number / tens) % 10) + '0');
 	}
 }
