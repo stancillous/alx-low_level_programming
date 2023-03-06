@@ -10,11 +10,11 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int strLen, int subLen, i;
+	int strLen, subLen, i;
 
 	for (strLen = 0; haystack[strLen] != '\0'; strLen++)
 		;
-	for (subLen = 0; needle(subLen) != '\0'; subLen++)
+	for (subLen = 0; needle[subLen] != '\0'; subLen++)
 		;
 	/*loop through the string haystack*/
 	for (i = 0; strLen - subLen; i++)
