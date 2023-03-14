@@ -14,9 +14,15 @@ char *argstostr(int ac, char **av)
 	char *str;
 	int argLen = 0, index = 0, i;
 
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
 	for (i = 0; i < ac; i++)
 		argLen += strlen(av[i] + 1);
 	str = malloc(argLen * sizeof(char));
+
+	if (str == NULL)
+		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
