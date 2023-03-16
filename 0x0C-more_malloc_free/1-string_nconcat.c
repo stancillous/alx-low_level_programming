@@ -30,6 +30,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		num = len2;
 
 	comb = malloc(sizeof(*comb) * (len1 + num) + 1);
+	if (comb == NULL)
+		return(NULL);
 
 	len1 = 0;
 	len2 = 0;
