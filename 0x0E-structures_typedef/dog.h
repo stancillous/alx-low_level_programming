@@ -1,6 +1,7 @@
 #ifndef POPPY
 #define POPPY
 
+typedef struct dog dog_t;
 /**
  *struct dog - dog's attributes
  * @owner: dog owner
