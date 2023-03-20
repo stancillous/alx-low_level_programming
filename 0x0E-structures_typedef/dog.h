@@ -3,7 +3,7 @@
 
 /**
  *struct dog - dog's attributes
- * owner: dog owner
+ * @owner: dog owner
  * @age: dog's age
  * @name: name of the dog
  * Description: Define a new type struct dog with the following elements
