@@ -14,7 +14,7 @@ void get_codes(char *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%.shhx", a[i]);
+		printf("%.2hhx", a[i]);
 		if (i < n - 1)
 			printf(" ");
 	}
@@ -41,8 +41,8 @@ int main(int argc, char **argv)
 	if (c < 0)
 	{
 		printf("Error\n");
-		exit(2)
+		exit(2);
 	}
-	get_codes((char *)&main, a);
+	get_codes((char *)&main, c);
 	return (0);
 }
