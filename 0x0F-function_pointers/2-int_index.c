@@ -3,14 +3,14 @@
 /**
  * int_index - searches for an int
  * @size: size of array
- * @array: array 
+ * @array: array
  * @cmp: pointer to function
  * Return: index of the int if found, else -1
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i;
+	int i;
 
 	if (size <= 0)
 		return (-1);
