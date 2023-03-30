@@ -13,7 +13,7 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *newnode;
 	unsigned int strlen = 0;
 
-	while (sr[strlen])
+	while (str[strlen])
 		strlen++;
 
 	newstr = strdup(str);
