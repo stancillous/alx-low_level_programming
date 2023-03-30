@@ -4,7 +4,7 @@
  * add_node_end - add node at the end of a list
  * @head: head pointer
  * @str: string to be copied to the new node
- * Retun: address of new node
+ * Return: address of new node
  */
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -23,6 +23,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	newnode->len = strlen;
 	newnode->str = newstr;
 	newnode->next = NULL;
+	if (*head == NULL)
+	{
+		*head = newnode;
+		return (newnode);
+	}
 
 	temp = (*head);
 	while (temp->next != NULL)
