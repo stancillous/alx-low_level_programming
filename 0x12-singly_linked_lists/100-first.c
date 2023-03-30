@@ -7,7 +7,7 @@ void my_init(void) __attribute__((constructor));
  * Return: void
  */
 
-oid my_init(void)
+void my_init(void)
 {
 	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
