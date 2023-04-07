@@ -1,5 +1,5 @@
 ### Structs and Typedef in C
-
+<h5>
 a struct is a composite data type that groups together variables of different types under a single name. The variables, also known as members, can be of any type, including other structs.<br>
 
 1. Defining a struct
@@ -18,3 +18,4 @@ typedef struct student {
     float gpa;
 } Student;
 ```
+</h5>
