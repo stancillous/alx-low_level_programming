@@ -1,6 +1,6 @@
-###C - Singly Linked Lists
+### C - Singly Linked Lists
 <h5>A singly linked list is a data structure in C that consists of a sequence of nodes, where each node contains a data value and a pointer to the next node in the list</h5>
-Unlike arrays, elements are not stored in a continous block of memory.
+<h5>Unlike arrays, elements are not stored in a continous block of memory.
 Some important things to know about sll:
 <p></p>
 1. Declaring a node: use structs
@@ -30,4 +30,4 @@ struct Node* temp = head;
 
 ```
 <p></p>
-Q. Difference btwn arrays and linked lists (adv and disadv. of each)
+Q. Difference btwn arrays and linked lists (adv and disadv. of each) </h5>
