@@ -9,7 +9,8 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int new, i, addNum = 1;
+	unsigned int i;
+	int new, addNum = 1;
 
 	if (index > 32)
 		return (-1);
