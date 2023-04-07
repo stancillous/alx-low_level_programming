@@ -21,7 +21,7 @@ struct Node {
 <p></p>
 4. Deleting nodes (beginning, end or specific position)
 <p></p>
-5.Traversing the list
+5.Traversing the lists
 
 ```
 struct Node* temp = head;
