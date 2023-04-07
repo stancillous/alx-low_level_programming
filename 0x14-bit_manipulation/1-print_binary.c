@@ -30,6 +30,6 @@ void print_binary(unsigned long int n)
 	for (i = 0; str[i] != '\0'; i++)
 		sLen++;
 	for (i = sLen - 1; i >= 0; i--)
-		putchar(str[i]);
-	putchar('\n');
+		_putchar(str[i]);
+	_putchar('\n');
 }
