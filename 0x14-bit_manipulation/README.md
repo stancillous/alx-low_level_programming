@@ -10,5 +10,5 @@ Bitwise operators: <br>
 << left shift<br>
 >> right shift <br>
 
-Bitwise operations: You can use bitwise operators to set, clear, or toggle individual bits of a variable<br>
+Bitwise operations: You can use bitwise operators to set, clear, or toggle individual bits of a variable(check use of masks)<br>
 </h5>
