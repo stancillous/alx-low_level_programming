@@ -10,6 +10,8 @@ void print_binary(unsigned long int n)
 {
 	int i;
 
+	if (n == 0)
+		_putchar('0' + 0);
 	for (i = 31; i >= 0; i--)
 	{
 		if ((n & (1 << i)) != 0)
