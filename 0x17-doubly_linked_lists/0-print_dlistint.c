@@ -13,7 +13,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (trav != NULL)
 	{
-		print("%d\n", trav->n);
+		printf("%d\n", trav->n);
 		trav = trav->next;
 		nodes_num++;
 	}
