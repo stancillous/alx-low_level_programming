@@ -5,6 +5,7 @@
  * @h: double head ptr
  * @idx: index
  * @n: data of new node
+ * Return: new node address
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
