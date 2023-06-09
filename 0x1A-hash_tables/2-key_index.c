@@ -1,11 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds el to hash table
- * @ht: hash table to be updated
+ * key_index - gives index of key
  * @key: key
- * @value: value 
- * Return: 1(success) or 0(failure)
+ * @size: size of array
+ * Return: index of the key
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
