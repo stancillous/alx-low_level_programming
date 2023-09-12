@@ -8,21 +8,41 @@
  * Return: index of the value if found, else -1
 */
 
-int linear_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
-    int new_size = size, index;
+    int low = 0, high = size - 1, middle_index, i;
 
-    if (array == NULL)
-        return (NULL);
+    if (!array)
+        return (-1);
 
-    for (index = 0; index < new_size; index++)
-    {
-        printf("Value checked array[%d] = [%d]\n", index, array[index]);
-        
-        if (array[index] == value)
+    while (low <= high) {
+        middle_index = (low + high)/2;
+
+        printf("Searching in array: ");
+        for (i = low; i <= high; i++)
         {
-            return (index);
+            printf("%d", array[i]);
+            if (i + 1 != high + 1)
+                printf(", ");
+            
         }
+        printf("\n");
+
+        if (array[middle_index] == value)
+            return (middle_index);
+
+        if (array[middle_index] > value)
+        {
+            high = middle_index - 1;
+            continue;
+        }
+        
+        else {
+            low = middle_index + 1;
+            continue;
+        }
+        
     }
+
     return (-1);
 }
