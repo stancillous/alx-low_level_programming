@@ -66,21 +66,37 @@ int binary_recursion(int *array, int value, int low, int high)
 }
 
 /**
- * advanced_binary - advanced binary search
+ * exponential_search - func to search for element
+ * using expo search algorithm
  * @array: array passed
- * @size: array size
+ * @size: size of array
  * @value: value to be checked
  * Return: index of value if found, else -1
 */
-int advanced_binary(int *array, size_t size, int value)
+
+int exponential_search(int *array, size_t size, int value)
 {
-    int low = 0, high = size - 1, index;
+    int low, high, middle_index; /*to be used for binary search*/
+    int power = 2, i = 1;
+    int value_index, array_size = size;
 
     if (!array)
         return (-1);
 
-    index = binary_recursion(array, value, low, high);
-    return (index);
+    if (array[0] == value)
+        return (0);
 
-  
+    while (i < array_size && array[i] <= value)
+    {
+        printf("Value checked array[%d] = [%d]\n", i, array[i]);
+        i *= power;
+    }
+
+
+    /*perform binary search*/
+    low = i / 2;
+    high = (i < size) ? i: size - 1;
+    printf("Value found between indexes [%d] and [%d]\n", low, high);
+    value_index = binary_recursion(array, value, low, high);
+    return (value_index);
 }
