@@ -76,7 +76,7 @@ int binary_recursion(int *array, int value, int low, int high)
 
 int exponential_search(int *array, size_t size, int value)
 {
-    int low, high, middle_index; /*to be used for binary search*/
+    int low, high; /*to be used for binary search*/
     int power = 2, i = 1;
     int value_index, array_size = size;
 
@@ -95,7 +95,7 @@ int exponential_search(int *array, size_t size, int value)
 
     /*perform binary search*/
     low = i / 2;
-    high = (i < size) ? i: size - 1;
+    high = (i < array_size) ? i: array_size - 1;
     printf("Value found between indexes [%d] and [%d]\n", low, high);
     value_index = binary_recursion(array, value, low, high);
     return (value_index);
